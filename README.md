@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m mainly Java Software Developer<br>👯 I’m looking to collaborate on software creation<br>🌱 I’m currently learning AWS<br>💬 Ask me about Java Development<br>⚡ Fun fact - Laziness promotes efficiency
+🔭 I’m mainly Java Software Developer<br>👯 I’m looking to collaborate on software creation<br>💬 Ask me about Java Development<br>⚡ Fun fact - Laziness promotes efficiency
 
 
 ## 🌐 Socials:
