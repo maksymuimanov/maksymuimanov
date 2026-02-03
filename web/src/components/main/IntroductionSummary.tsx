@@ -6,7 +6,7 @@ export const IntroductionSummary = () => {
             <div className="text-2xl w-100 md:w-125 lg:w-150 text-secondary-foreground">
                 <span>I am an aspiring and highly motivated </span>
                 <HighlightedText text="Fullstack Developer" />
-                <span> with hands-on experience in </span>
+                <span> from Poland with hands-on experience in </span>
                 <HighlightedText text="Java and React" />
             </div>
         </div>
