@@ -3,7 +3,7 @@ import {LucideMail} from "lucide-react";
 import {
     Popover,
     PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/components/ui/popover.tsx"
 import {CopyEmailPopoverContent} from "@/components/header/CopyEmailPopoverContent.tsx";
 
 export const EmailButton = () => {

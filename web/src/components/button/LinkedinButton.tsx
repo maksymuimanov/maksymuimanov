@@ -1,5 +1,5 @@
 import {LinkedinIcon} from "lucide-react";
-import {HrefButton} from "@/components/common/HrefButton.tsx";
+import {HrefButton} from "@/components/button/HrefButton.tsx";
 
 export const LinkedinButton = () => {
     return (

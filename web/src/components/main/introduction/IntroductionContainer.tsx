@@ -1,6 +1,6 @@
 import {IntroductionHeading} from "@/components/main/introduction/IntroductionHeading.tsx";
 import {IntroductionSummary} from "@/components/main/introduction/IntroductionSummary.tsx";
-import {DownloadButton} from "@/components/main/introduction/DownloadButton.tsx";
+import {DownloadCVButton} from "@/components/button/DownloadCVButton.tsx";
 import {GridBackground} from "@/components/main/introduction/GridBackground.tsx";
 
 export const IntroductionContainer = () => {
@@ -10,9 +10,7 @@ export const IntroductionContainer = () => {
             <div>
                 <IntroductionHeading />
                 <IntroductionSummary />
-                <div className="mt-15 text-center">
-                    <DownloadButton />
-                </div>
+                <DownloadCVButton />
             </div>
         </div>
     );

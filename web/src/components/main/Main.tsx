@@ -6,6 +6,9 @@ export const Main = () => {
         <main className="h-full w-full font-mono">
             <IntroductionContainer />
             <TechStackMarqueeContainer />
+            <div className="mt-50">
+                {/*<ProjectCard/>*/}
+            </div>
         </main>
     );
 };

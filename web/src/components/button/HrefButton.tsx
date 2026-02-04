@@ -1,11 +1,11 @@
 import {Button} from "@/components/ui/button.tsx";
-import type {ReactElement} from "react";
+import React, {type ReactElement} from "react";
 
 interface HrefButtonProperties {
     href: string
     buttonClassName?: string
-    buttonVariant?: "default" | "link" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined
-    buttonSize?: "default" | "xs" | "sm" | "lg" | "icon" | "icon-xs" | "icon-sm" | "icon-lg" | null | undefined
+    buttonVariant?: "default" | "link" | "destructive" | "outline" | "secondary" | "ghost" | null
+    buttonSize?: "default" | "xs" | "sm" | "lg" | "icon" | "icon-xs" | "icon-sm" | "icon-lg" | null
     aClassName?: string
     children?: ReactElement
 }

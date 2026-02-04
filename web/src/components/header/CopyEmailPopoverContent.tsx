@@ -1,5 +1,5 @@
 import {PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle} from "@/components/ui/popover.tsx";
-import {CopyButton} from "@/components/header/CopyButton.tsx";
+import {CopyButton} from "@/components/button/CopyButton.tsx";
 
 export const CopyEmailPopoverContent = () => {
     return (
