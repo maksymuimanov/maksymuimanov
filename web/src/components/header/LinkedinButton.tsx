@@ -1,11 +1,10 @@
 import {LinkedinIcon} from "lucide-react";
-import {Button} from "@/components/ui/button.tsx";
+import {HrefButton} from "@/components/common/HrefButton.tsx";
 
 export const LinkedinButton = () => {
     return (
-        <Button className="cursor-pointer" variant="outline" size="icon">
-            <a className="absolute h-[2.0rem] w-[2.0rem]" target="_blank" href="https://www.linkedin.com/in/w4t3rcs/" />
+        <HrefButton href="https://www.linkedin.com/in/w4t3rcs/" aClassName="absolute h-[2.0rem] w-[2.0rem]" buttonVariant="outline" buttonSize="icon">
             <LinkedinIcon className="h-[1.2rem] w-[1.2rem] scale-100" />
-        </Button>
+        </HrefButton>
     );
 };

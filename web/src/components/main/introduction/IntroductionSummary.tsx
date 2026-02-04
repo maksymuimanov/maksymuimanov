@@ -1,4 +1,4 @@
-import {HighlightedText} from "@/components/main/HighlightedText.tsx";
+import {HighlightedText} from "@/components/main/introduction/HighlightedText.tsx";
 
 export const IntroductionSummary = () => {
     return (

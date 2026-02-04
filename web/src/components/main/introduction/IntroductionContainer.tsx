@@ -1,7 +1,7 @@
-import {IntroductionHeading} from "@/components/main/IntroductionHeading.tsx";
-import {IntroductionSummary} from "@/components/main/IntroductionSummary.tsx";
-import {DownloadButton} from "@/components/main/DownloadButton.tsx";
-import {GridBackground} from "@/components/main/GridBackground.tsx";
+import {IntroductionHeading} from "@/components/main/introduction/IntroductionHeading.tsx";
+import {IntroductionSummary} from "@/components/main/introduction/IntroductionSummary.tsx";
+import {DownloadButton} from "@/components/main/introduction/DownloadButton.tsx";
+import {GridBackground} from "@/components/main/introduction/GridBackground.tsx";
 
 export const IntroductionContainer = () => {
     return (

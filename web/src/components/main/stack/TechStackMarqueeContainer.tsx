@@ -1,4 +1,4 @@
-import {TechStackMarquee} from "@/components/main/TechStackMarquee.tsx";
+import {TechStackMarquee} from "@/components/main/stack/TechStackMarquee.tsx";
 
 export const TechStackMarqueeContainer = () => {
     return (

@@ -1,5 +1,5 @@
-import {TechStackMarqueeContainer} from "@/components/main/TechStackMarqueeContainer.tsx";
-import {IntroductionContainer} from "@/components/main/IntroductionContainer.tsx";
+import {TechStackMarqueeContainer} from "@/components/main/stack/TechStackMarqueeContainer.tsx";
+import {IntroductionContainer} from "@/components/main/introduction/IntroductionContainer.tsx";
 
 export const Main = () => {
     return (

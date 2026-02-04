@@ -1,5 +1,5 @@
 import {Button} from "@/components/ui/button.tsx";
-import cv from "@/../public/cv.pdf";
+import cv from "../../../../public/cv.pdf";
 
 export const DownloadButton = () => {
     return (
