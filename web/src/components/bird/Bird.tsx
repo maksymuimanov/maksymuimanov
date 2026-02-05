@@ -6,7 +6,7 @@ export const Bird = () => {
             animate={{ rotate: 720 }}
             transition={{ ease: "easeInOut", duration: 1 }}>
             <motion.div
-                animate={{ scale: 1.25 }}
+                animate={{ scale: 1.5 }}
                 transition={{ ease: "easeOut", duration: 0.5, repeat: 1, repeatType: "reverse" }}>
                 <motion.div
                     drag

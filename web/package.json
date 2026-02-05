@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@boxicons/react": "^1.0.2",
+    "@devicon/react": "^0.0.3",
     "@space-man/react-theme-animation": "^2.1.0",
     "@tailwindcss/vite": "^4.1.18",
     "class-variance-authority": "^0.7.1",
