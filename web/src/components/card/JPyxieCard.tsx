@@ -1,5 +1,4 @@
 import {
-    Card,
     CardContent,
     CardDescription,
     CardFooter,
@@ -7,29 +6,23 @@ import {
     CardTitle
 } from "@/components/ui/card.tsx";
 import {HrefButton} from "@/components/button/HrefButton.tsx";
-import {CardHrefContainer} from "@/components/main/project/CardHrefContainer.tsx";
-import {BadgeContainer} from "@/components/main/project/BadgeContainer.tsx";
-import {IconBadge} from "@/components/main/project/IconBadge.tsx";
+import {CardHrefContainer} from "@/components/project/CardHrefContainer.tsx";
+import {BadgeContainer} from "@/components/project/BadgeContainer.tsx";
+import {IconBadge} from "@/components/project/IconBadge.tsx";
 import {
     DockerOriginalIcon,
     FastapiOriginalIcon,
-    GrpcOriginalIcon,
     JavaOriginalIcon,
-    JunitOriginalIcon,
-    MavenOriginalIcon, PythonOriginalIcon,
+    MavenOriginalIcon,
+    PythonOriginalIcon,
     SpringOriginalIcon
 } from "@devicon/react";
 import banner from "@/assets/jpyxie.svg";
+import {ProjectCard} from "@/components/card/ProjectCard.tsx";
 
 export const JPyxieCard = () => {
     return (
-        <Card className="relative mx-auto w-full max-w-sm pt-0 bg-linear-to-b from-background to-card">
-            <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-            <img
-                src={banner}
-                alt="Event cover"
-                className="relative z-20 aspect-video w-full object-cover brightness-60 dark:brightness-40"
-            />
+        <ProjectCard banner={banner}>
             <CardHeader>
                 <CardTitle>JPyxie</CardTitle>
                 <CardDescription>
@@ -44,12 +37,10 @@ export const JPyxieCard = () => {
                 <BadgeContainer>
                     <IconBadge><JavaOriginalIcon size="20"/></IconBadge>
                     <IconBadge><SpringOriginalIcon size="20"/></IconBadge>
-                    <IconBadge><GrpcOriginalIcon size="20"/></IconBadge>
                     <IconBadge><PythonOriginalIcon size="20"/></IconBadge>
                     <IconBadge><FastapiOriginalIcon size="20"/></IconBadge>
                     <IconBadge><DockerOriginalIcon size="20"/></IconBadge>
                     <IconBadge><MavenOriginalIcon size="20"/></IconBadge>
-                    <IconBadge><JunitOriginalIcon size="20" /></IconBadge>
                 </BadgeContainer>
             </CardContent>
             <CardFooter>
@@ -62,6 +53,6 @@ export const JPyxieCard = () => {
                     </HrefButton>
                 </CardHrefContainer>
             </CardFooter>
-        </Card>
+        </ProjectCard>
     );
 };

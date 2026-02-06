@@ -1,5 +1,4 @@
 import {
-    Card,
     CardContent,
     CardDescription,
     CardFooter,
@@ -7,21 +6,16 @@ import {
     CardTitle
 } from "@/components/ui/card.tsx";
 import {HrefButton} from "@/components/button/HrefButton.tsx";
-import {CardHrefContainer} from "@/components/main/project/CardHrefContainer.tsx";
-import {BadgeContainer} from "@/components/main/project/BadgeContainer.tsx";
-import {IconBadge} from "@/components/main/project/IconBadge.tsx";
+import {CardHrefContainer} from "@/components/project/CardHrefContainer.tsx";
+import {BadgeContainer} from "@/components/project/BadgeContainer.tsx";
+import {IconBadge} from "@/components/project/IconBadge.tsx";
 import {GradleOriginalIcon, JavaOriginalIcon} from "@devicon/react";
 import banner from "@/assets/temporalapi.png";
+import {ProjectCard} from "@/components/card/ProjectCard.tsx";
 
 export const TemporalAPICard = () => {
     return (
-        <Card className="relative mx-auto w-full max-w-sm pt-0 bg-linear-to-b from-background to-card">
-            <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-            <img
-                src={banner}
-                alt="Event cover"
-                className="relative z-20 aspect-video w-full object-cover brightness-60 dark:brightness-40"
-            />
+        <ProjectCard banner={banner}>
             <CardHeader>
                 <CardTitle>Temporal API</CardTitle>
                 <CardDescription>
@@ -52,6 +46,6 @@ export const TemporalAPICard = () => {
                     </HrefButton>
                 </CardHrefContainer>
             </CardFooter>
-        </Card>
+        </ProjectCard>
     );
 };

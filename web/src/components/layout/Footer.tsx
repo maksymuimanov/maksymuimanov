@@ -1,4 +1,4 @@
-import {TextHr} from "@/components/main/TextHr.tsx";
+import {TextHr} from "@/components/common/TextHr.tsx";
 
 export const Footer = () => {
     return (

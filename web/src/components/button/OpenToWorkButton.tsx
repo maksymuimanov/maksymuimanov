@@ -4,7 +4,7 @@ import {
 } from "@/components/ui/popover.tsx";
 import {Button} from "@/components/ui/button.tsx";
 import {RadioTowerIcon} from "lucide-react";
-import {OpenToWorkPopoverContent} from "@/components/header/OpenToWorkPopoverContent.tsx";
+import {OpenToWorkPopoverContent} from "@/components/popover/OpenToWorkPopoverContent.tsx";
 
 export const OpenToWorkButton = () => {
     return (

@@ -4,7 +4,7 @@ import {
     Popover,
     PopoverTrigger,
 } from "@/components/ui/popover.tsx"
-import {CopyEmailPopoverContent} from "@/components/header/CopyEmailPopoverContent.tsx";
+import {CopyEmailPopoverContent} from "@/components/popover/CopyEmailPopoverContent.tsx";
 
 export const EmailButton = () => {
     return (

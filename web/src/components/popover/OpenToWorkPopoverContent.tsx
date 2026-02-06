@@ -15,9 +15,7 @@ export const OpenToWorkPopoverContent = () => {
                 </PopoverTitle>
                 <PopoverDescription>
                         <span>
-                            If you know anyone who looks for
-                            Java/Java+React Developers, let me know about them!
-                            I appreciate all kind of help!
+                            Hire me please or contact me if you know anyone who is hiring software engineers!
                         </span>
                 </PopoverDescription>
             </PopoverHeader>

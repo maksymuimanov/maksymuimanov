@@ -1,7 +1,7 @@
-import {Header} from "@/components/header/Header.tsx";
-import {Main} from "@/components/main/Main.tsx";
+import {Header} from "@/components/layout/Header.tsx";
+import {Main} from "@/components/layout/Main.tsx";
 import {ViteThemeProvider} from "@space-man/react-theme-animation";
-import {Footer} from "@/components/footer/Footer.tsx";
+import {Footer} from "@/components/layout/Footer.tsx";
 
 function App() {
   return (

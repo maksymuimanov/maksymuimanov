@@ -1,27 +1,26 @@
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card.tsx";
+import {CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card.tsx";
 import {HrefButton} from "@/components/button/HrefButton.tsx";
-import {CardHrefContainer} from "@/components/main/project/CardHrefContainer.tsx";
-import {BadgeContainer} from "@/components/main/project/BadgeContainer.tsx";
-import {IconBadge} from "@/components/main/project/IconBadge.tsx";
+import {CardHrefContainer} from "@/components/project/CardHrefContainer.tsx";
+import {BadgeContainer} from "@/components/project/BadgeContainer.tsx";
+import {IconBadge} from "@/components/project/IconBadge.tsx";
 import {
-    ApachekafkaOriginalIcon, DockerOriginalIcon, ElasticsearchOriginalIcon, GrafanaOriginalIcon,
+    ApachekafkaOriginalIcon,
+    DockerOriginalIcon,
+    ElasticsearchOriginalIcon,
     HibernateOriginalIcon,
-    JavaOriginalIcon, JunitOriginalIcon,
-    KibanaOriginalIcon, KubernetesOriginalIcon, LogstashOriginalIcon, MavenOriginalIcon,
-    MysqlOriginalIcon, PrometheusOriginalIcon, RedisOriginalIcon,
+    JavaOriginalIcon,
+    KubernetesOriginalIcon,
+    MavenOriginalIcon,
+    MysqlOriginalIcon,
+    RedisOriginalIcon,
     SpringOriginalIcon
 } from "@devicon/react";
 import banner from "@/assets/pizzeriabackend.png";
+import {ProjectCard} from "@/components/card/ProjectCard.tsx";
 
 export const PizzeriaBackendCard = () => {
     return (
-        <Card className="relative mx-auto w-full max-w-sm pt-0 bg-linear-to-b from-background to-card">
-            <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-            <img
-                src={banner}
-                alt="Event cover"
-                className="relative z-20 aspect-video w-full object-cover brightness-60 dark:brightness-40"
-            />
+        <ProjectCard banner={banner}>
             <CardHeader>
                 <CardTitle>Pizzeria App Backend</CardTitle>
                 <CardDescription>
@@ -40,14 +39,9 @@ export const PizzeriaBackendCard = () => {
                     <IconBadge><RedisOriginalIcon size="20" /></IconBadge>
                     <IconBadge><ApachekafkaOriginalIcon color="gray" size="20" /></IconBadge>
                     <IconBadge><ElasticsearchOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><LogstashOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><KibanaOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><PrometheusOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><GrafanaOriginalIcon size="20" /></IconBadge>
                     <IconBadge><DockerOriginalIcon size="20" /></IconBadge>
                     <IconBadge><KubernetesOriginalIcon size="20" /></IconBadge>
                     <IconBadge><MavenOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><JunitOriginalIcon size="20" /></IconBadge>
                 </BadgeContainer>
             </CardContent>
             <CardFooter>
@@ -57,6 +51,6 @@ export const PizzeriaBackendCard = () => {
                     </HrefButton>
                 </CardHrefContainer>
             </CardFooter>
-        </Card>
+        </ProjectCard>
     );
 };
