@@ -6,16 +6,18 @@ import {
     CardTitle
 } from "@/components/ui/card.tsx";
 import {HrefButton} from "@/components/button/HrefButton.tsx";
-import {CardHrefContainer} from "@/components/project/CardHrefContainer.tsx";
-import {BadgeContainer} from "@/components/project/BadgeContainer.tsx";
-import {IconBadge} from "@/components/project/IconBadge.tsx";
-import {GradleOriginalIcon, JavaOriginalIcon} from "@devicon/react";
+import {CardHrefContainer} from "@/components/card/CardHrefContainer.tsx";
+import {BadgeContainer} from "@/components/card/BadgeContainer.tsx";
 import banner from "@/assets/temporalapi.png";
 import {ProjectCard} from "@/components/card/ProjectCard.tsx";
+import {TextBadge} from "@/components/common/TextBadge.tsx";
+import {useState} from "react";
 
 export const TemporalAPICard = () => {
+    const [hovered, setHovered] = useState(false);
+
     return (
-        <ProjectCard banner={banner}>
+        <ProjectCard onHover={setHovered} banner={banner}>
             <CardHeader>
                 <CardTitle>Temporal API</CardTitle>
                 <CardDescription>
@@ -27,10 +29,15 @@ export const TemporalAPICard = () => {
                     and event handling system
                 </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className={hovered ? "" : "grayscale-75"}>
                 <BadgeContainer>
-                    <IconBadge><JavaOriginalIcon size="20"/></IconBadge>
-                    <IconBadge><GradleOriginalIcon color="#4a97b5" size="20"/></IconBadge>
+                    <TextBadge text="java" variant="orange" />
+                    <TextBadge text="minecraft" variant="green" />
+                    <TextBadge text="neoforge" variant="orange" />
+                    <TextBadge text="forge" variant="gray" />
+                    <TextBadge text="guava" variant="purple" />
+                    <TextBadge text="apache commons" variant="red" />
+                    <TextBadge text="gradle" variant="cyan" />
                 </BadgeContainer>
             </CardContent>
             <CardFooter>

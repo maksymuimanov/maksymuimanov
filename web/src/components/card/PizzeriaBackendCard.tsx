@@ -1,26 +1,17 @@
 import {CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card.tsx";
 import {HrefButton} from "@/components/button/HrefButton.tsx";
-import {CardHrefContainer} from "@/components/project/CardHrefContainer.tsx";
-import {BadgeContainer} from "@/components/project/BadgeContainer.tsx";
-import {IconBadge} from "@/components/project/IconBadge.tsx";
-import {
-    ApachekafkaOriginalIcon,
-    DockerOriginalIcon,
-    ElasticsearchOriginalIcon,
-    HibernateOriginalIcon,
-    JavaOriginalIcon,
-    KubernetesOriginalIcon,
-    MavenOriginalIcon,
-    MysqlOriginalIcon,
-    RedisOriginalIcon,
-    SpringOriginalIcon
-} from "@devicon/react";
+import {CardHrefContainer} from "@/components/card/CardHrefContainer.tsx";
+import {BadgeContainer} from "@/components/card/BadgeContainer.tsx";
 import banner from "@/assets/pizzeriabackend.png";
 import {ProjectCard} from "@/components/card/ProjectCard.tsx";
+import {TextBadge} from "@/components/common/TextBadge.tsx";
+import {useState} from "react";
 
 export const PizzeriaBackendCard = () => {
+    const [hovered, setHovered] = useState(false);
+
     return (
-        <ProjectCard banner={banner}>
+        <ProjectCard onHover={setHovered} banner={banner}>
             <CardHeader>
                 <CardTitle>Pizzeria App Backend</CardTitle>
                 <CardDescription>
@@ -30,18 +21,33 @@ export const PizzeriaBackendCard = () => {
                     It's mostly a project to showcase my skills and knowledge at building REST APIs
                 </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className={hovered ? "" : "grayscale-75"}>
                 <BadgeContainer>
-                    <IconBadge><JavaOriginalIcon size="20"/></IconBadge>
-                    <IconBadge><SpringOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><HibernateOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><MysqlOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><RedisOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><ApachekafkaOriginalIcon color="gray" size="20" /></IconBadge>
-                    <IconBadge><ElasticsearchOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><DockerOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><KubernetesOriginalIcon size="20" /></IconBadge>
-                    <IconBadge><MavenOriginalIcon size="20" /></IconBadge>
+                    <TextBadge text="java" variant="orange" />
+                    <TextBadge text="spring boot" variant="green" />
+                    <TextBadge text="hibernate" variant="yellow" />
+                    <TextBadge text="mysql" variant="cyan" />
+                    <TextBadge text="liquibase" variant="blue" />
+                    <TextBadge text="mongodb" variant="green" />
+                    <TextBadge text="redis" variant="red" />
+                    <TextBadge text="apache kafka" variant="gray" />
+                    <TextBadge text="elk" variant="blue" />
+                    <TextBadge text="ollama" variant="gray" />
+                    <TextBadge text="stripe" variant="purple" />
+                    <TextBadge text="zipkin" variant="orange" />
+                    <TextBadge text="prometheus" variant="orange" />
+                    <TextBadge text="grafana" variant="orange" />
+                    <TextBadge text="swagger" variant="emerald" />
+                    <TextBadge text="keycloak" variant="cyan" />
+                    <TextBadge text="junit" variant="red" />
+                    <TextBadge text="mockito" variant="green" />
+                    <TextBadge text="testcontainers" variant="green" />
+                    <TextBadge text="wiremock" variant="emerald" />
+                    <TextBadge text="docker" variant="blue" />
+                    <TextBadge text="k8s" variant="blue" />
+                    <TextBadge text="aws" variant="orange" />
+                    <TextBadge text="maven" variant="purple" />
+                    <TextBadge text="rest" variant="gray" />
                 </BadgeContainer>
             </CardContent>
             <CardFooter>

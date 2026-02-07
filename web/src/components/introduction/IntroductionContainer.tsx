@@ -5,12 +5,14 @@ import {GridBackground} from "@/components/background/GridBackground.tsx";
 
 export const IntroductionContainer = () => {
     return (
-        <div className="bg-background relative flex size-full items-center justify-center overflow-hidden p-20">
-            <GridBackground />
-            <div>
-                <IntroductionHeading />
-                <IntroductionSummary />
-                <DownloadCVButton />
+        <div className="bg-background relative flex size-full items-center justify-center overflow-hidden">
+            <GridBackground/>
+            <div className="flex flex-row min-h-screen justify-center items-center">
+                <div>
+                    <IntroductionHeading/>
+                    <IntroductionSummary/>
+                    <DownloadCVButton/>
+                </div>
             </div>
         </div>
     );
