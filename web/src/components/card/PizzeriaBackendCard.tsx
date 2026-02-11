@@ -27,27 +27,18 @@ export const PizzeriaBackendCard = () => {
                     <TextBadge text="spring boot" variant="green" />
                     <TextBadge text="hibernate" variant="yellow" />
                     <TextBadge text="mysql" variant="cyan" />
-                    <TextBadge text="liquibase" variant="blue" />
                     <TextBadge text="mongodb" variant="green" />
                     <TextBadge text="redis" variant="red" />
                     <TextBadge text="apache kafka" variant="gray" />
-                    <TextBadge text="elk" variant="blue" />
                     <TextBadge text="ollama" variant="gray" />
-                    <TextBadge text="stripe" variant="purple" />
-                    <TextBadge text="zipkin" variant="orange" />
-                    <TextBadge text="prometheus" variant="orange" />
-                    <TextBadge text="grafana" variant="orange" />
                     <TextBadge text="swagger" variant="emerald" />
                     <TextBadge text="keycloak" variant="cyan" />
                     <TextBadge text="junit" variant="red" />
-                    <TextBadge text="mockito" variant="green" />
-                    <TextBadge text="testcontainers" variant="green" />
-                    <TextBadge text="wiremock" variant="emerald" />
                     <TextBadge text="docker" variant="blue" />
                     <TextBadge text="k8s" variant="blue" />
-                    <TextBadge text="aws" variant="orange" />
                     <TextBadge text="maven" variant="purple" />
                     <TextBadge text="rest" variant="gray" />
+                    <TextBadge text="microservices" variant="gray" />
                 </BadgeContainer>
             </CardContent>
             <CardFooter>

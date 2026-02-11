@@ -38,13 +38,9 @@ export const JPyxieCard = () => {
                     <TextBadge text="jep" variant="cyan" />
                     <TextBadge text="jython" variant="orange" />
                     <TextBadge text="python" variant="yellow" />
-                    <TextBadge text="fastapi" variant="cyan" />
-                    <TextBadge text="grpcio" variant="emerald" />
                     <TextBadge text="docker" variant="blue" />
                     <TextBadge text="maven" variant="purple" />
                     <TextBadge text="junit" variant="red" />
-                    <TextBadge text="mockito" variant="green" />
-                    <TextBadge text="testcontainers" variant="green" />
                     <TextBadge text="rest" variant="gray" />
                     <TextBadge text="grpc" variant="gray" />
                 </BadgeContainer>
