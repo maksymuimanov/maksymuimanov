@@ -22,7 +22,7 @@ export const TemporalAPICard = () => {
                 <CardTitle>Temporal API</CardTitle>
                 <CardDescription>
                     Temporal API is a Minecraft modding framework
-                    with 11M+ downloads that focuses on making
+                    with 12M+ downloads that focuses on making
                     the whole Minecraft mod development a lot
                     easier and faster by reducing boilerplate
                     code and providing new annotation-based procession

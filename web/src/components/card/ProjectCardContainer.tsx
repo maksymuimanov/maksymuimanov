@@ -5,6 +5,7 @@ import {PizzeriaBackendCard} from "@/components/card/PizzeriaBackendCard.tsx";
 import {TextHr} from "@/components/common/TextHr.tsx";
 import {motion} from "motion/react";
 import {TechStackMarquee} from "@/components/marquee/TechStackMarquee.tsx";
+import {ConditionalsSpringBootCard} from "@/components/card/ConditionalsSpringBootCard.tsx";
 
 export const ProjectCardContainer = () => {
     return (
@@ -18,6 +19,7 @@ export const ProjectCardContainer = () => {
                 <TemporalAPICard />
                 <ExtraCompatCard />
                 <PizzeriaBackendCard />
+                <ConditionalsSpringBootCard />
             </div>
             <TechStackMarquee reverse={true} />
         </motion.div>

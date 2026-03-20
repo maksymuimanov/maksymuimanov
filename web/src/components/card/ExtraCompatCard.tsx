@@ -15,7 +15,7 @@ export const ExtraCompatCard = () => {
             <CardHeader>
                 <CardTitle>Extra Compat</CardTitle>
                 <CardDescription>
-                    Extra Compat is a Minecraft mod with 11M+ downloads.
+                    Extra Compat is a Minecraft mod with 12M+ downloads.
                     The project focuses on making multiple Minecraft
                     mods compatible with each other without the headache.
                     Around 50% of the whole content were simply suggestions from
