@@ -19,7 +19,7 @@ export const ConditionalsSpringBootCard = () => {
                     library that adds more @Conditional annotations
                     to the Spring Boot framework. It provides a bunch
                     of strict type-checking conditions and some other
-                    useful conditions (e.g. @ConditionalOnOs, @ConditionalOnPortAvailable).
+                    useful conditions (e.g. @ConditionalOnOs, @ConditionalOnPortAvailable)
                 </CardDescription>
             </CardHeader>
             <CardContent className={hovered ? "" : "grayscale-75"}>
